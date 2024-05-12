@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    
+    background-color: rgb(29, 26, 26);
+}
+h1{
+    text-align: center;
+    color: white;
+}
+section{
+    width: auto;
+    height: auto;
+}
