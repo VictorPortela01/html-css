@@ -5,14 +5,13 @@
 }
 
 body {
-
     background-color: rgb(29, 26, 26);
 }
 
 main {
     width: 600px;
     margin: auto;
-    
+
 }
 
 h1 {
@@ -20,7 +19,13 @@ h1 {
     font-size: 50px;
 }
 
-a {
+main > a {
     color: white;
+    text-decoration: none;
+    padding: 10px;
+
 }
 
+a.botao {
+    margin: 10px;
+}
