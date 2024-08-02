@@ -1,17 +1,15 @@
 @charset "UTF-8";
 
-* {
-    text-align: center;
-}
-
 body {
     background-color: rgb(29, 26, 26);
 }
 
 main {
-    width: 600px;
+    max-width: 450px;
     margin: auto;
-
+    text-align: center;
+    position: relative;
+    
 }
 
 h1 {
@@ -26,6 +24,12 @@ main > a {
 
 }
 
-a.botao {
-    margin: 10px;
+.botao{
+    position: absolute;
+    
+    left: 48%;
+    top:  100%;
+
+    transform: translate(-40%, 00%);
 }
+
