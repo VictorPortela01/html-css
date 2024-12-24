@@ -1,24 +1,23 @@
 @charset "UTF-8";
-
-/*Estilos para impressoras*/
+/* Estilo para impressoras */
 * {
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
 }
 
 html {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
-menu {
+menu{
     display: none;
 }
-
 article {
     width: 100%;
 }
-article::after {
-    content: 'Esse artigo foi impreso através do site www.cursoemvideo.com';
+
+article::after{
+    content: 'Esse artigo foi impresso através do iste www.cursoemvideo.com';
 }
