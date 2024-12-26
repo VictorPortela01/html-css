@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
     <title>Media Query</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <ul>
-            <a href="#"><li>Opção 1</li></a>
-            <a href="#"><li>Opção 2</li></a>
-            <a href="#"><li>Opção 3</li></a>
-            <a href="#"><li>Opção 4</li></a>
-            <a href="#"><li>Opção 5</li></a>    
-        </ul>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+
+            </ul>
+        </menu>
     </header>
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum esse maiores tempora ea beatae. Ipsa excepturi voluptatum provident mollitia, quis ratione autem aliquid deleniti dolorem esse qui omnis laudantium soluta deserunt aliquam tempore beatae praesentium dolor consectetur molestias. Iusto eum fugit porro eos quas consequuntur! Magnam laborum, eveniet, provident repellendus quos minus culpa, reiciendis reprehenderit animi fuga possimus doloremque accusamus vel? Reiciendis adipisci dolorum doloribus? Aspernatur.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum esse maiores tempora ea beatae. Ipsa excepturi voluptatum provident mollitia, quis ratione autem aliquid deleniti dolorem esse qui omnis laudantium soluta deserunt aliquam tempore beatae praesentium dolor consectetur molestias. Iusto eum fugit porro eos quas consequuntur! Magnam laborum, eveniet, provident repellendus quos minus culpa, reiciendis reprehenderit animi fuga possimus doloremque accusamus vel? Reiciendis adipisci dolorum doloribus? Aspernatur.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum esse maiores tempora ea beatae. Ipsa excepturi voluptatum provident mollitia, quis ratione autem aliquid deleniti dolorem esse qui omnis laudantium soluta deserunt aliquam tempore beatae praesentium dolor consectetur molestias. Iusto eum fugit porro eos quas consequuntur! Magnam laborum, eveniet, provident repellendus quos minus culpa, reiciendis reprehenderit animi fuga possimus doloremque accusamus vel? Reiciendis adipisci dolorum doloribus? Aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum esse maiores tempora
+                ea beatae. Ipsa excepturi voluptatum provident mollitia, quis ratione autem aliquid deleniti dolorem
+                esse qui omnis laudantium soluta deserunt aliquam tempore beatae praesentium dolor consectetur
+                molestias. Iusto eum fugit porro eos quas consequuntur! Magnam laborum, eveniet, provident repellendus
+                quos minus culpa, reiciendis reprehenderit animi fuga possimus doloremque accusamus vel? Reiciendis
+                adipisci dolorum doloribus? Aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum esse maiores tempora
+                ea beatae. Ipsa excepturi voluptatum provident mollitia, quis ratione autem aliquid deleniti dolorem
+                esse qui omnis laudantium soluta deserunt aliquam tempore beatae praesentium dolor consectetur
+                molestias. Iusto eum fugit porro eos quas consequuntur! Magnam laborum, eveniet, provident repellendus
+                quos minus culpa, reiciendis reprehenderit animi fuga possimus doloremque accusamus vel? Reiciendis
+                adipisci dolorum doloribus? Aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, voluptatum esse maiores tempora
+                ea beatae. Ipsa excepturi voluptatum provident mollitia, quis ratione autem aliquid deleniti dolorem
+                esse qui omnis laudantium soluta deserunt aliquam tempore beatae praesentium dolor consectetur
+                molestias. Iusto eum fugit porro eos quas consequuntur! Magnam laborum, eveniet, provident repellendus
+                quos minus culpa, reiciendis reprehenderit animi fuga possimus doloremque accusamus vel? Reiciendis
+                adipisci dolorum doloribus? Aspernatur.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
+
 </html>
